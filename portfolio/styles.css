@@ -1,0 +1,218 @@
+:root {
+    --primary-color: #0d6efd;
+    --dark-color: #212529;
+    --light-blue: #cfe2ff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f8f9fa;
+    background-color: #121212;
+}
+
+.navbar {
+    background-color: var(--dark-color) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-link {
+    color: #f8f9fa !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/IMG-20250330-WA0035.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.section-heading {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+.section-heading.text-center:after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-heading:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+    color: #f8f9fa; 
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(13, 110, 253, 0.2);
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+
+.card-body p, .card-body h6 {
+    color: #f8f9fa;
+}
+
+.text-muted {
+    color: #adb5bd !important; 
+}
+
+.skill-item {
+    background-color: #2a2a2a;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.progress {
+    height: 10px;
+    margin-bottom: 15px;
+    background-color: #2a2a2a;
+}
+
+.progress-bar {
+    background-color: var(--primary-color);
+}
+
+.icon-box {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.contact-form .form-control {
+    background-color: #2a2a2a;
+    border: none;
+    color: #f8f9fa;
+    padding: 10px 15px;
+}
+
+.contact-form .form-control:focus {
+    box-shadow: none;
+    border: 1px solid var(--primary-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px 25px;
+    font-weight: 500;
+}
+
+.btn-outline-primary {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+footer {
+    background-color: var(--dark-color);
+    padding: 30px 0;
+}
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+    background-color: #2a2a2a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: var(--primary-color);
+}
+
+
+.icon-user-graduate:before {
+    content: "👨‍🎓";
+}
+
+.icon-code:before {
+    content: "</>";
+}
+
+.icon-server:before {
+    content: "⚙️";
+}
+
+.icon-chart-line:before {
+    content: "📈";
+}
+
+.icon-map-marker-alt:before {
+    content: "📍";
+}
+
+.icon-envelope:before {
+    content: "✉️";
+}
+
+.icon-phone:before {
+    content: "📱";
+}
+
+.icon-github:before {
+    content: "GH";
+}
+
+.icon-linkedin-in:before {
+    content: "in";
+}
+
+.icon-twitter:before {
+    content: "tw";
+}
+
+.icon-instagram:before {
+    content: "ig";
+}
+
+.bg-dark {
+    background-color: #0d1117 !important; 
+}
+
+.bg-dark .section-heading {
+    color: var(--primary-color);
+}
+
+.bg-dark .section-heading:after {
+    background-color: var(--primary-color);
+}
